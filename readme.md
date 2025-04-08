@@ -72,10 +72,16 @@ That’s how the total of 30 features is formed (10 features × 3 different meas
 ---
 
 ## Project Structure
-- **`data.csv`**: The Breast Cancer Wisconsin (Diagnostic) data.
-- **`notebooks/`** (optional): Jupyter notebooks demonstrating data exploration and model training.
-- **`scripts/`** (optional): Python scripts for data preprocessing, model training, and evaluation.
-- **`README.md`**: This file, providing an overview of the project.
+Below is an overview of the main files in this repository along with their creation details:
+1. **CancerPrediction_DicisionTreeClassification.ipynb**  
+2. **CancerPrediction_KNN.ipynb**  
+3. **CancerPrediction_KernalSVM.ipynb**  
+4. **CancerPrediction_LogisticRegression.ipynb**  
+5. **CancerPrediction_NaiveBayes.ipynb**  
+6. **CancerPrediction_RandomTreeClassification.ipynb**  
+7. **CancerPrediction_SVM.ipynb**  
+8. **data.csv**  
+9. **readme.md**  
 
 ---
 ## Modeling Approaches
