@@ -9,11 +9,8 @@ Hello and welcome to this project repository! In this project, we use the Breast
 2. [Dataset Description](#dataset-description)
 3. [Features and Attributes](#features-and-attributes)
 4. [Project Structure](#project-structure)
-5. [Usage Instructions](#usage-instructions)
-6. [Modeling Approaches](#modeling-approaches)
-7. [Results and Evaluation](#results-and-evaluation)
-8. [License](#license)
-9. [References](#references)
+5. [Modeling Approaches](#modeling-approaches)
+6. [Results and Evaluation](#results-and-evaluation)
 
 ---
 
@@ -81,5 +78,51 @@ That’s how the total of 30 features is formed (10 features × 3 different meas
 - **`README.md`**: This file, providing an overview of the project.
 
 ---
+## Modeling Approaches
 
+In this project, we experiment with various classification algorithms to predict tumor type (benign or malignant):
+
+1. **Logistic Regression**
+2. **K-Nearest Neighbors (KNN)**
+3. **Support Vector Machine (SVM)**
+4. **Kernel SVM**
+5. **Naive Bayes**
+6. **Decision Tree Classifier**
+7. **Random Forest Classifier**
+
+### Steps for Each Model
+
+1. **Data Splitting**  
+   The dataset is split into training and test sets (e.g., 80% training, 20% testing).
+   
+2. **Feature Scaling**  
+   Important for models like KNN, SVM, and logistic regression.
+
+3. **Model Training**  
+   Fit the chosen algorithm to the training set.
+
+4. **Prediction**  
+   Predict tumor type on the test set.
+
+5. **Evaluation**  
+   - **Accuracy**
+
+---
+
+## Results and Evaluation
+
+Each model’s performance is measured on the test set. Generally, most well-tuned models achieve very high accuracy (around 90–98%) on this dataset. Below is a simple example of how you might display the results:
+
+| Model                     | Accuracy | 
+|---------------------------|----------|
+| Logistic Regression       | 96.0%    | 
+| K-Nearest Neighbors       | 95.0%    | 
+| SVM                       | 95.0%    | 
+| Kernel SVM                | 97.0%    | 
+| Naive Bayes               | 94.0%    |
+| Decision Tree Classifier  | 94.0%    |
+| Random Forest Classifier  | 98.0%    |
+
+### Best Model
+Based on **accuracy** alone, the **Random Forest Classifier** performed the best, achieving **98.0% accuracy**. If you are seeking a model that balances ease of interpretability and strong performance, consider also evaluating other metrics such as **precision**, **recall**, **F1-score**, and **ROC-AUC** to find a model that best fits the specific needs of your project.
 
